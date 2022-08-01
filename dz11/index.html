@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./feedback.png" type="image/x-icon">
+    <title>Домашка 10 и 11</title>
+    <script src="main.js" async></script>
+    <style>
+      body{
+        background-color: #f5f0e1;
+        color: #1e3d59;
+        text-align: center;
+        font-size: 30px;
+        margin: 0;
+      }
+      h1{
+        margin: 0;
+      }
+      header{
+        font-weight: 700;
+      }
+      input{
+        width: 150px;
+        height: 20px;
+      }
+
+      button, #submit{ 
+
+        font-size: 28px;
+        background-color: #ff6e40;
+        width: 150px;
+        border: 1px solid;
+        border-radius: 5px;
+        margin-top: 10px;
+        color: #f5f0e1;
+        margin-bottom: 10px;
+
+      }
+      #submit{
+        height: 40px;
+      }
+      footer{
+        text-align: center;
+        color: #1e3d59;
+      }
+    </style>
+  </head>
+  <body id="body">
+    <h1>Review form</h1>
+    <div class="container">
+      <form action="" id="form">
+        <div class="fill">
+          <label for="from">From</label> <br>
+          <input type="text" id="from" name="from">
+        </div>
+        
+        <div class="fill">
+          <label for="text">Text</label><br>
+          <input type="text" id="text" name="text">
+        </div>
+        
+        <div class="fill">
+          <label for="review">Review</label><br>
+          <input type="number" id="review" min='1' max="5" name="review">
+        </div>
+  
+        <input type="submit" id="submit">
+      </form>
+      
+      <div class="addLine">
+        <button class="up sortBtns">Sort up</button>
+        <button class="down sortBtns">Sort down</button>
+        <p class="average">Overall score</p>
+      </div>
+      
+      <ul id="list"></ul>
+    </div>
+  </body>
+</html>
